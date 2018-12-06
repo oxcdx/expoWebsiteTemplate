@@ -8,7 +8,7 @@
 	
 	<title>Title</title>
 	
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=xyz" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.typotheque.com/WF-029842-009948.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/style-hy.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -23,109 +23,69 @@
 	crossorigin=""></script>
 
 	<script>
-	$( document ).ready(function() {
-	$("#oooh-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: 0
-	    }, 1200);
-	});
-	$("#about-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#about-top").offset().top
-	    }, 400);
-	});
-	$("#projects-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#projects-top").offset().top
-	    }, 400);
-	});
-	$("#map-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#map").offset().top
-	    }, 800);
-	});
-	$("#ab-btn").click(function() {
-	    $('html, body').animate({
-		  scrollTop: $("#projects-top").offset().top
-	      }, 400);
+		$( document ).ready(function() {
 
-	  });
-	$("#co-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#co").offset().top
-	    }, 400);
+			$("#oooh-btn").click(function() {
+			    $('html, body').animate({
+				scrollTop: 0
+			    }, 1200);
+			});
+			$("#about-btn").click(function() {
+			    $('html, body').animate({
+				scrollTop: $("#about-top").offset().top
+			    }, 400);
+			});
+			$("#projects-btn").click(function() {
+			    $('html, body').animate({
+				scrollTop: $("#projects-top").offset().top
+			    }, 400);
+			});
+			$("#map-btn").click(function() {
+			    $('html, body').animate({
+				scrollTop: $("#map").offset().top
+			    }, 800);
+			});
+			$("#ab-btn").click(function() {
+			    $('html, body').animate({
+				  scrollTop: $("#projects-top").offset().top
+			      }, 400);
 
-	});
-	$("#sc-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#sc").offset().top
-	    }, 400);
+			  });
+			$("#co-btn").click(function() {
+			    $('html, body').animate({
+				scrollTop: $("#co").offset().top
+			    }, 400);
 
-	});
-	$("#jd-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#jd").offset().top
-	    }, 400);
-
-	});
-	$("#yj-btn").click(function() {
-	    $('html, body').animate({
-	      scrollTop: $("#yj").offset().top
-	  }, 400);
-
-	});
-	$("#am-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#am").offset().top
-	    }, 400);
-
-	});
-	$("#tq-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#tq").offset().top
-	    }, 400);
-
-	});
-	$("#mr-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#mr").offset().top
-	    }, 400);
-
-	});
-	$("#dv-btn").click(function() {
-	    $('html, body').animate({
-		scrollTop: $("#dv").offset().top
-	    }, 400);
-
-	});
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	  $(function() {
-	    $("#btnControl").click(function(){
-	    $('#menu-x').css("display", "block");
-	});
-		$(window).scroll(function(){
-	      $('#menu-x').css("display", "none");
+			});
 		});
-	  });
-	}
-	else {
-	$(function() {
-		$(window).scroll(function(){
-	    $('#btnControl').attr('checked', false);
-			var scrollTop = $(window).scrollTop();
-			if(scrollTop != 0)
-	    $(function() {
-	    $('#names-menu').show();
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$(function() {
+				$("#btnControl").click(function(){
+				$('#menu-x').css("display", "block");
+			});
+			$(window).scroll(function(){
+				$('#menu-x').css("display", "none");
+			});
+		});
+		}
+		else {
+			$(function() {
+				$(window).scroll(function(){
+				$('#btnControl').attr('checked', false);
+					var scrollTop = $(window).scrollTop();
+					if(scrollTop != 0)
+			$(function() {
+				$('#names-menu').show();
 				$('#names-menu').stop().animate({'opacity':'1'},200);
-	      });
+			});
 			else
 				$('#names-menu').stop().animate({'opacity':'0'},400, function() {
-	    $('#names-menu').hide();
-	  });
+				$('#names-menu').hide();
+			});
 		});
-	});
-	}
-	});
+		});
+		}
+		});
 	</script>
 </head>
 
